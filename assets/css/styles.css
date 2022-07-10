@@ -38,6 +38,15 @@ body {
     background-color: #15191C;
     width: 75vw;
     height: 100vh;
+
+    position:absolute;
+    left: -100vw;
+    transition: .25s;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
 }
 
 .menu-lateral__logo {
@@ -72,6 +81,7 @@ body {
 .menu-lateral__link--inicio::before {
     content: "\e902";
 }
+
 
 .menu-lateral__link--videos::before {
     content: "\e903";
