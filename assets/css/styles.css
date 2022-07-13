@@ -103,10 +103,31 @@ body {
     content: "\e90a";
 }
 
-.cartao__conteudo{
+.principal {
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.titulo-pagina {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    width: 72px;
+    height: 32px;
+    left: 16px;
+    top: 80px;
+}
+
+.titulo-secao {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cartao__conteudo {
     display: grid;
     padding: 16px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-column: span 2;
     gap: 8px;
 }
@@ -115,21 +136,15 @@ body {
     grid-column: span 2;
 }
 
-.principal {
-    padding: 24px 16px;
-}
-
-.titulo-pagina {
-    font-size: 1.5rem;
-    font-weight: 700;
-      grid-column: span 2;
-}
-
 .cartao {
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
+}
+
+.cartao--destaque {
+    margin-bottom: 16px;
 }
 
 .cartao__conteudo{
@@ -174,6 +189,7 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 
 .cartao__botao--play::before {
@@ -189,5 +205,11 @@ body {
 .cartao__botao--destaque::before{
     margin-right: 10px;
 }
+
+.secao{
+    display: grid;
+    gap: 16px;
+}
+
 
 
