@@ -111,14 +111,11 @@ body {
 .titulo-pagina {
     font-size: 1.5rem;
     font-weight: 700;
-<<<<<<< HEAD
     margin-bottom: 16px;
     width: 72px;
     height: 32px;
     left: 16px;
     top: 80px;
-=======
->>>>>>> 5784ff8b901e70e467fdfe654d900518a33d8a96
 }
 
 .titulo-secao {
@@ -126,7 +123,6 @@ body {
     font-weight: 700;
 }
 
-<<<<<<< HEAD
 .cartao__conteudo {
     display: grid;
     padding: 16px;
@@ -139,8 +135,6 @@ body {
     grid-column: span 2;
 }
 
-=======
->>>>>>> 5784ff8b901e70e467fdfe654d900518a33d8a96
 .cartao {
     width: 100%;
     border-radius: 15px;
@@ -152,11 +146,7 @@ body {
     margin-bottom: 16px;
 }
 
-<<<<<<< HEAD
 .cartao__conteudo{
-=======
-.cartao__conteudo {
->>>>>>> 5784ff8b901e70e467fdfe654d900518a33d8a96
     padding: 16px;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -221,7 +211,6 @@ body {
     margin-right: 8px;
 }
 
-<<<<<<< HEAD
 .secao{
     display: grid;
     gap: 16px;
@@ -229,9 +218,3 @@ body {
 
 
 
-=======
-.secao {
-    display: grid;
-    gap: 16px;
-}
->>>>>>> 5784ff8b901e70e467fdfe654d900518a33d8a96
