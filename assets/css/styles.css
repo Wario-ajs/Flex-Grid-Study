@@ -142,12 +142,24 @@ body {
     content: "\e902";
 }
 
+.menu-lateral__link--inicio:hover {
+    color: #FFFFFF;
+    padding-left: 56px;
+    border-left: 8px solid #FFFFFF;
+}
+
 .menu-lateral__link--videos::before {
     content: "\e90e";
 }
 
 .menu-lateral__link--picos::before {
     content: "\e909";
+}
+
+.menu-lateral__link--picos:hover {
+    color: #FFFFFF;
+    padding-left: 56px;
+    border-left: 8px solid #FFFFFF;
 }
 
 .menu-lateral__link--integrantes::before {
@@ -395,3 +407,75 @@ body {
         grid-area: secao-produtos;
     }
 }
+
+/*Página de Picos*/
+
+.principal--picos {
+    gap: 16px;
+}
+
+.mapa--picos{
+    height: auto;
+}
+
+.mapa__picos--imagem {
+    width: auto;
+    height: 623px;
+}
+
+.cartao--favoritos {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .principal--picos{
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "titulo-pagina-picos titulo-pagina-picos titulo-pagina-picos"
+            "mapa--picos mapa--picos cartao--favoritos"
+            "secao-picos secao-picos secao-picos"
+        ;
+        gap: 16px;
+        column-gap: 32px;
+        padding: 16px 60px;
+        grid-column: 2;
+    }
+
+    .titulo-pagina-picos {
+        grid-area: titulo-pagina-picos;
+    }
+    
+    .mapa--picos{
+        height: 563px;
+        width: 889.45px;
+        grid-area: mapa--picos;
+    }
+    .mapa__picos--imagem {
+        height: 563px;
+        width: 889.45px;
+    }
+    
+    .cartao--favoritos {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        row-gap: 24px;
+        width: 256px;
+        padding: 16px;
+        box-sizing: border-box;
+        align-self: flex-start;
+        grid-area: cartao--favoritos;
+    }
+
+    .secao-picos {
+        grid-area: secao-picos;
+    }
+}
+
+.cartao__botao--pico::before {
+    content: "\e908";
+    font-size: 24px;
+}
+
